@@ -1,0 +1,14 @@
+/* 自定义的 antd 样式 */
+@import './AntdCustom.css';
+/*公共组件的样式*/
+@import './PageFrame.css';
+
+
+.form-item {
+    padding: 10px;
+
+    .item-label {
+        display: block;
+        padding: 5px;
+    }
+}

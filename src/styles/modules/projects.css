@@ -1,0 +1,43 @@
+.proj-wrap {
+    display: flex;
+    height: 100%;
+
+    .proj-list {
+        position: relative;
+        width: 200px;
+        background: #fbfbfb;
+        border-right: 1px solid #dee5e7;
+        
+        .proj-toolbar {
+            padding: 10px;
+            background: #edf1f2;
+            border-bottom: 1px solid #b9b9b9;
+
+            .proj-btn {
+                width: 160px;
+                background: #fff;
+                box-shadow: 0 1px 1px rgba(90,90,90,.1);
+            }
+        }
+        .menu-nav-scroll {
+            position: absolute;
+            width: 100%;
+            top: 49px;
+            bottom: 0;
+            overflow: hidden;
+            overflow-y: auto;
+
+            .menu-nav-wrap {
+                position: absolute;
+                width: 100%;
+            }
+        }
+        
+    }
+
+    .proj-content {
+        flex: 1;
+        background: #fff;
+    }
+
+}

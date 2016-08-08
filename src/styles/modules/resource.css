@@ -1,0 +1,21 @@
+.resource-wrap {
+    display: flex;
+    flex-direction: column;
+
+    .reso-header {
+        height: 49px;
+        padding-left: 10px;
+        background: #edf1f2;
+        border-bottom: 1px solid #b9b9b9;
+
+        .ant-menu {
+            margin-top: 1px;
+            background: #edf1f2;
+        }
+    }
+
+    .reso-body {
+        flex: 1;
+        padding: 10px;
+    }
+}

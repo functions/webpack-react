@@ -1,3 +1,5 @@
+###FE project seed
+    gulp + webpack + reactjs + postcss
 ###local dev environment
     python --version    2.5 ~ 3.0
 ###project initialize

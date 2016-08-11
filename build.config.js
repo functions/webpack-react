@@ -7,7 +7,7 @@ var Path = require('path');
 module.exports = {
     gulpDest: Path.join('prd'),
     output: Path.join(__dirname, 'prd'),  // 输入文件的路径
-    public: '/dzs_upms/prd/',
+    public: '/prd/',
 
     entry: {
         index: './src/scripts/index.js'

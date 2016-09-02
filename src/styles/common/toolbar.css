@@ -1,0 +1,54 @@
+$pf-toolbar-h: 60px;
+
+.pf-toolbar {
+    height: $pf-toolbar-h;
+    background: $dark-bgc;
+
+    .pf-tlb-nav {
+        line-height: $pf-toolbar-h;
+        
+        a {
+          color: inherit;
+        }
+
+        .nav-item {
+            display: inline-block;
+            height: $pf-toolbar-h;
+            padding: 0 15px;
+            color: $nav-ftc;
+            cursor: pointer;
+
+            .icon {
+                font-size: 16px;
+                display: block;
+                line-height: normal;
+                padding: 10px;
+                opacity: .7;
+
+                &.users { color: #457fd6; }
+                &.roles { color: #c5a42b; }
+                &.resources { color: #8a62da; }
+                &.projects { color: #4bbb54; }
+            }
+
+            .text {
+                display: block;
+                line-height: normal;
+                text-align: center;
+                color: $nav-ftc;
+            }
+
+            &.active {
+                background: $nav-active-bgc;
+                .icon { opacity: 1; }
+                .text { color: #fff; }
+            }
+            
+            &:hover {
+                background: $nav-hover-bgc;
+                .icon { opacity: 1; }
+                .text { color: #fff; }
+            }
+        }
+    }
+}

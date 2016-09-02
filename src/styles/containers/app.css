@@ -1,0 +1,10 @@
+.pageframe-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @import '../components/header.css';
+    @import '../components/projects.css';
+    @import '../components/project.css';
+      @import '../components/users.css';
+}

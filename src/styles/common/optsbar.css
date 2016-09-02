@@ -1,0 +1,9 @@
+$proj-toolbar: 60px;
+
+.opts-bar {
+    height: $proj-toolbar;
+    line-height: $proj-toolbar;
+    background: #edf1f2;
+    border-bottom: 1px solid #dee5e7;
+    padding-left: 20px;
+}

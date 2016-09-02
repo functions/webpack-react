@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>gulp + webpack + react + postcss</title>
-    <link rel="stylesheet" href="/prd/index.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>UPMS - 通用权限管理平台</title>
 </head>
 <body>
     <div class="main"></div>
-    <script src="/prd/index.js"></script>
+    <script src="<%= htmlWebpackPlugin.options.vendorFileName %>"></script>
 </body>
 </html>

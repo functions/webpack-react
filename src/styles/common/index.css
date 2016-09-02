@@ -1,14 +1,4 @@
-/* 自定义的 antd 样式 */
-@import './AntdCustom.css';
-/*公共组件的样式*/
-@import './PageFrame.css';
+@charset 'utf-8';
 
-
-.form-item {
-    padding: 10px;
-
-    .item-label {
-        display: block;
-        padding: 5px;
-    }
-}
+@import './toolbar.css';
+@import './optsbar.css';

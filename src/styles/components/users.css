@@ -1,0 +1,31 @@
+$user-info-w: 300px;
+
+.user-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .user-list-wrap {
+        flex: 1;
+        position: relative;
+
+        .user-list {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            padding: 0 15px;
+            overflow-y: scroll;
+            background: $user-list-bgc;
+        }
+    }
+}
+
+.user-info {
+    position: absolute;
+    right: 0;
+    width: $user-info-w;
+    height: 100%;
+    padding: 15px;
+    background: #eee;
+}

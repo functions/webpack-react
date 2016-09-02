@@ -1,0 +1,74 @@
+$topbar-h: 45px;
+$navbar-h: 60px;
+$ops-btn-color: #2db7f5;
+
+.pf-head {
+    height: $topbar-h;
+    background: $dark-bgc;
+    color: $dark-ftc;
+
+    .pf-topbar {
+        height: $topbar-h;
+        background: $light-bgc;
+        display: flex;
+
+        .pf-logo {
+            display: inline-block;
+            height: $topbar-h;
+            overflow: hidden;
+            width: 120px;
+            background: $dark-bgc;
+            color: #fff;
+
+            h1 {
+                line-height: $topbar-h;
+                text-align: center;
+                text-shadow: 0 0 3px #fff;
+            }
+        }
+
+        .pf-switch-proj {
+            display: inline-block;
+            // width: 260px;
+            line-height: $topbar-h;
+            margin-left: 20px;
+            .pf-tlb-text {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .ant-select {
+                width: 200px;
+            }
+        }
+
+        .pf-tlb-info {
+            display: inline-block;
+            line-height: $topbar-h;
+            text-align: right;
+            flex: 1;
+
+            a {
+                color: inherit;
+            }
+            .pf-tlb-tips {
+                display: inline-block;
+                padding: 0 5px;
+            }
+            .pf-tlb-button {
+                padding: 0 10px;
+                cursor: pointer;
+                .anticon {
+                    color: $ops-btn-color;
+                }
+                &:hover {
+                    color: $ops-btn-color;
+                }
+            }
+        }
+    }
+}
+
+.pf-body {
+    flex: 1;
+    background: $light-bgc;
+}

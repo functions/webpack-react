@@ -3,24 +3,28 @@
 /*公共库*/
 @import './libs/antd.css';
 
-/*自定义公共组件*/
-@import './common/index.css';
-
-/*首页*/
-@import './modules/home.css';
-/*项目*/
-@import './modules/projects.css';
-/*资源*/
-@import './modules/resource.css';
-/*用户*/
-@import './modules/users.css';
-
-html, body, .main{
+/*设置全局样式*/
+html, body, .main {
     width: 100%;
     height: 100%;
     color: #58666e;
 }
 
+/*主题颜色*/
+$dark-bgc: #1c2b36;
+$dark-ftc: #7793a7;
+$light-bgc: #edf1f2;
+$nav-ftc: #869fb1;
+$nav-hover-bgc: #16232d;
+$nav-active-bgc: #131e26;
+
+/*自定义公共组件*/
+@import './common/index.css';
+
+/*容器*/
+@import './containers/app.css';
+
+/*设置滚动条样式*/
 ::-webkit-scrollbar {
     width: 3px;
 }

@@ -3,13 +3,20 @@
  */
 
 // 引入样式
-require('styles/index.css');
+import 'styles/index.css';
 
-// 引入基础库
-window.React = require('react');
-window.ReactDOM = require('react-dom');
-window.ReactRouter = require('react-router');
-window.Antd = require('antd');
+// 引入 provider 组件
+const { Provider } = ReactRedux;
 
-// 引入路由，入口文件
-require('./modules/Router.js');
+// redux store
+import configureStore from './store';
+import AppRouter from './AppRouter';
+
+const store = configureStore();
+
+// 渲染页面
+ReactDOM.render((
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>
+), document.querySelector('.main'));

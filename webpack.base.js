@@ -13,7 +13,7 @@ module.exports = {
         //文件输出目录
         path: path.join(__dirname, 'prd'),
         //用于配置文件发布路径，如CDN或本地服务器
-        publicPath: '/dzs_upms/prd/',
+        publicPath: '/prd/',
         //根据入口文件输出的对应多个文件名
         filename: '[name].js'
     },
@@ -22,7 +22,7 @@ module.exports = {
         //文件输出目录
         path: path.join(__dirname, 'prd'),
         //用于配置文件发布路径，如CDN或本地服务器
-        publicPath: '/dzs_upms/prd/',
+        publicPath: '/prd/',
         //根据入口文件输出的对应多个文件名
         filename: '[name]@[chunkhash].js'
     },

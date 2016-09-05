@@ -54,6 +54,11 @@ module.exports = {
         ]),
         // 把第三方库的依赖注入到代码中
         new webpack.ProvidePlugin(baseConfig.provideLibs),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './html/index.html',
+            vendors: vendorsFileName
+        }),
         //增加HMR(模块热插拔)
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),

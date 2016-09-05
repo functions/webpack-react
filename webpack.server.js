@@ -3,7 +3,7 @@ var WebpackDevServer = require('webpack-dev-server');
 var webpack = require('webpack');
 var open = require('open');
 
-var serverPath = 'http://local.qunar.com:5001';
+var serverPath = 'http://127.0.0.1:3001';
 var webpackServer = 'http://127.0.0.1:3000/';
 
 new WebpackDevServer(webpack(webpackConfig), {

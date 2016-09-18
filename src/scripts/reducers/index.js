@@ -1,8 +1,13 @@
 import { combineReducers } from 'redux';
-import header from './header';
+
+import SysProjects from './sysmanage/SysProjects';
+import SysIndex from './sysmanage/SysIndex';
+import MyIndex from './myprojects/MyIndex';
 
 const rootReducer = combineReducers({
-  header
+  SysIndex,
+  SysProjects,
+  MyIndex
 });
 
 export default rootReducer;

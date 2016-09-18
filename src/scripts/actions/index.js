@@ -1,5 +1,9 @@
-import * as header from './header';
+import * as SysIndex from './sysmanage/SysIndex';
+import * as SysProjects from './sysmanage/SysProjects';
+import * as MyIndex from './myprojects/MyIndex';
 
 export default {
-  header
+  SysIndex,
+  SysProjects,
+  MyIndex
 }

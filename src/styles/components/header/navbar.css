@@ -1,0 +1,79 @@
+.navbar-wrap {
+    display: flex;
+    background: $dark-bgc;
+
+    .nabr-item {
+        display: inline-block;
+    }
+
+    .navbar-left {
+        width: 120px;
+        line-height: $pf-toolbar-h;
+        text-align: center;
+        color: #fff;
+
+        .navbar-title-wrap {
+            display: inline-block;
+            vertical-align: top;
+            height: $pf-toolbar-h;
+            line-height: $pf-toolbar-h;
+
+            .ant-dropdown-menu {
+                background: $dark-bgc;
+
+                .ant-dropdown-menu-item {
+                    color: $nav-ftc;
+
+                    &:hover {
+                        background: $nav-hover-bgc;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .navbar-title {
+            color: #fff;
+        }
+
+        .ant-dropdown-link {
+            display: inline-block;
+            width: 97px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .anticon.anticon-down {
+            margin-left: 10px;
+            vertical-align: top;
+            line-height: $pf-toolbar-h;
+        }
+    }
+
+    .navbar-arr {
+        width: 35px;
+        height: $pf-toolbar-h;
+        overflow: hidden;
+
+        .box-arrow-scale {
+            transform: scale(0.5, 1);
+            .box-arrow {
+                width: 100px;
+                height: 100px;
+                transform: rotateZ(45deg) translate3d(-81px, 52px, 0);
+                background: $dark-bgc;
+                box-shadow: 2px 0px 10px #000;
+            }
+        }
+    }
+
+    .navbar-right {
+        flex: 1;
+    }
+
+    .breadcrumb-arrow .anticon {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+}

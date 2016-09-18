@@ -1,0 +1,24 @@
+.breadcrumb {
+    height: $proj-breadcrumb-h;
+    line-height: $proj-breadcrumb-h;
+    background: $dark-bgc;
+    padding-left: 30px;
+    color: $light-bgc;
+
+    .proj-breadcrumb {
+        span {
+            padding: 0 3px;
+        }
+        .breadcrumb-arrow .anticon {
+            opacity: 0.5;
+            transform: scale(0.8);
+        }
+        .breadcrumb-home {
+            cursor: pointer;
+            .anticon {
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}

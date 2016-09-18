@@ -13,5 +13,14 @@ export default {
       path = path.replace(':id', id);
     }
     browserHistory.push(path);
+  },
+
+  back () {
+    browserHistory.goBack();
+  },
+
+  forward () {
+    browserHistory.goForward();
   }
+
 }

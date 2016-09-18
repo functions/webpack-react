@@ -1,4 +1,4 @@
-$topbar-h: 45px;
+$topbar-h: 35px;
 $navbar-h: 60px;
 $ops-btn-color: #2db7f5;
 
@@ -6,6 +6,7 @@ $ops-btn-color: #2db7f5;
     height: $topbar-h;
     background: $dark-bgc;
     color: $dark-ftc;
+    z-index: 10;
 
     .pf-topbar {
         height: $topbar-h;
@@ -17,13 +18,14 @@ $ops-btn-color: #2db7f5;
             height: $topbar-h;
             overflow: hidden;
             width: 120px;
-            background: $dark-bgc;
-            color: #fff;
+            color: #1c2b36;
 
             h1 {
-                line-height: $topbar-h;
+                font-size: 37px;
+                margin-top: 5px;
+                line-height: 35px;
                 text-align: center;
-                text-shadow: 0 0 3px #fff;
+                text-shadow: 0 0 3px #131e26;
             }
         }
 
@@ -47,9 +49,6 @@ $ops-btn-color: #2db7f5;
             text-align: right;
             flex: 1;
 
-            a {
-                color: inherit;
-            }
             .pf-tlb-tips {
                 display: inline-block;
                 padding: 0 5px;

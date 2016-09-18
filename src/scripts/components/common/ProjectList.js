@@ -1,28 +1,15 @@
 /**
  * 
  */
-import * as links from 'constants/Links'
-import actions from 'actions';
 let { Button, Icon, Card } = Antd;
+import ProjectCreate from 'components/common/ProjectCreate';
 
 
-export default class Projects extends React.Component {
-
-  static mapToRedux = {
-    mapStateToProps: state => ({
-      projects: state.header.projects
-    }),
-    mapDispatchToProps: {
-    }
-  };
+export default class ProjectList extends React.Component {
 
   static defaultProps = {
-    breadcrumb: '我的项目',
-    projects: []
-  }
-
-  state = {
-
+    projects: [],
+    projCreateVisible: false
   }
 
   constructor() {
@@ -30,15 +17,18 @@ export default class Projects extends React.Component {
   }
 
   render() {
-    const { projects, breadcrumb } = this.props;
+    const { projects, projCreateVisible } = this.props;
     let projectsOperate = null;
+    // 生成项目卡片列表
     let projectCardList = projects.map( item => {
+      // 卡片上的操作按钮
       projectsOperate = (
         <span>
           <span className="proj-item-ops"><Icon type="edit" /></span>
           <span className="proj-item-ops"><Icon type="cross" /></span>
         </span>
       );
+      // 单个卡片组件
       return (
         <Card title={item.title} extra={projectsOperate} key={item.key} 
           bordered={false} className="proj-item"
@@ -49,14 +39,9 @@ export default class Projects extends React.Component {
         </Card>
       );
     });
-
+    // 渲染卡片列表，工具栏
     return (
-      <div className="proj-wrap">
-        <div className="proj-breadcrumb">
-          <span className="breadcrumb-home"><Icon type="rollback" /> 返回</span>
-          <span className="breadcrumb-arrow"><Icon type="caret-right" /></span>
-          <span><Icon type="github" /> {breadcrumb}</span>
-        </div>
+      <div className="proj-list-wrap">
         <div className="opts-bar">
           <Button type="primary" onClick={ () => this.showAddProject() }>
             <Icon type="plus-circle-o" />新建项目
@@ -65,6 +50,7 @@ export default class Projects extends React.Component {
         <div className="proj-list">
           {projectCardList}
         </div>
+        <ProjectCreate visible={projCreateVisible} />
       </div>
     );
   }
@@ -74,9 +60,7 @@ export default class Projects extends React.Component {
   }
 
   showAddProject() {
-    
+
   }
 
 }
-
-export default ReduxConnect(Projects);

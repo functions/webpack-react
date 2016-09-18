@@ -1,5 +1,3 @@
-$pf-toolbar-h: 60px;
-
 .pf-toolbar {
     height: $pf-toolbar-h;
     background: $dark-bgc;
@@ -24,6 +22,7 @@ $pf-toolbar-h: 60px;
                 line-height: normal;
                 padding: 10px;
                 opacity: .7;
+                transition: all .3s;
 
                 &.users { color: #457fd6; }
                 &.roles { color: #c5a42b; }
@@ -36,6 +35,7 @@ $pf-toolbar-h: 60px;
                 line-height: normal;
                 text-align: center;
                 color: $nav-ftc;
+                transition: all .3s;
             }
 
             &.active {

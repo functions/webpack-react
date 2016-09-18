@@ -7,10 +7,6 @@ import Header from 'components/header/Header';
 
 export default class App extends React.Component {
 
-  state = {
-
-  }
-
   constructor() {
     super()
   }

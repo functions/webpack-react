@@ -9,11 +9,8 @@ export default class ToolBar extends React.Component {
 
   static defaultProps = {
     activeKey: '',
-    toolbarList: []
-  }
-
-  state = {
-
+    toolbarList: [],
+    onChange: () => {}
   }
 
   constructor() {
@@ -22,18 +19,19 @@ export default class ToolBar extends React.Component {
 
   render() {
     const { activeKey, toolbarList } = this.props;
-    let className = '';
+    let className = '', itemKey = '';
     let toolbarItems = null;
     // 生成导航按钮
     if (toolbarList.length > 0) {
       toolbarItems = toolbarList.map( item => {
-        if (item.key === activeKey) {
+        itemKey = item.key;
+        if (itemKey === activeKey) {
           className = 'active';
         } else {
           className = '';
         }
         return (
-          <li key={item.key} className={"nav-item " + className}>
+          <li key={itemKey} className={"nav-item " + className} onClick={ this.itemClick.bind(this, itemKey) }>
             <Link to={item.link}>
               <Icon className={"icon " + item.icon} type={item.iconType} />
               <span className="text">{item.title}</span>
@@ -53,7 +51,10 @@ export default class ToolBar extends React.Component {
   }
 
   componentDidMount() {
+  }
 
+  itemClick(itemKey) {
+    this.props.onChange(itemKey);
   }
 
 }

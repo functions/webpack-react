@@ -17,6 +17,8 @@ $light-bgc: #edf1f2;
 $nav-ftc: #869fb1;
 $nav-hover-bgc: #16232d;
 $nav-active-bgc: #131e26;
+$proj-breadcrumb-h: 50px;
+$pf-toolbar-h: 60px;  /*导航栏的高度*/
 
 /*自定义公共组件*/
 @import './common/index.css';

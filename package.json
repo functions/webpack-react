@@ -1,21 +1,21 @@
 {
   "name": "dzs-upms",
   "version": "1.0.0",
-  "description": "通用用户权限管理系统",
+  "description": "",
   "scripts": {
-    "init": "npm install --registry http://registry.npm.corp.qunar.com",
+    "init": "npm install --registry https://registry.npm.taobao.org",
     "dev": "node webpack.server.js",
     "publish": "webpack --config webpack.prod.js --colors --profile --display-modules",
     "dll": "webpack --config webpack.dll.js --colors --profile --display-modules"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.corp.qunar.com:fe/dzs_upms.git"
+    "url": "git@github.com:functions/webpack-react.git"
   },
   "jshintConfig": {
     "esnext": true
   },
-  "author": "bin.cao@qunar.com",
+  "author": "functions",
   "license": "ISC",
   "dependencies": {
     "antd": "^1.10.0",
@@ -44,8 +44,6 @@
     "del": "^2.2.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "gulp-clean": "^0.3.2",
-    "gulp-copy": "0.0.2",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "jsx-loader": "^0.13.2",
